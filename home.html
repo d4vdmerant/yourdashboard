@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lar Doce Lar</title>
+    <link rel="stylesheet" href="cssis/home.css">
+    <link rel="stylesheet" href="cssis/design-geral.css">
+
+</head>
+<body>
+    <nav>
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li><a href="bibli.html" class="nav-link">Biblioteca</a></li>
+        <li><a href="" class="nav-link">Meu Perfil</a></li>
+        <li><a href="" class="nav-link">Ajustes</a></li>
+        <li><a href="plyground.html" class="nav-link">Playground</a></li>
+    </nav>
+
+    <div id="loadingScreen" class="loading-screen">
+        <div class="spinner"></div>
+        <div class="loader">Carregando...</div>
+    </div>
+
+    <div class="main">
+        <div class="tbcar" id="cardule">
+            
+        </div>
+        <div class="lycard" id="cardrule">
+            <div class="lytxt">
+                <h1>LETRA</h1>
+                <p id="lyrics"></p>
+            </div>
+            <div class="plynow">
+                <h1>Tocando agora</h1>
+                <h2 id="songTitle">RED EYES DRAGON CHAIN</h2>
+                <p><span id="artistTitle">Odetari</span></p>
+
+                <div class="infiei2">
+    
+                    <div class="progress-container">
+                        <div class="times">
+
+                            <span id="currentTime">0:00</span>
+                            <span id="duration">0:00</span>
+                        </div>
+
+                        <input type="range" id="progressBar" value="0" max="100" step="0.1">
+                    </div>
+
+                    <div class="player-controls">
+                        <button id="prevBtn">
+                            <img src="imgs/fast_rewind_24dp_000000_FILL0_wght600_GRAD0_opsz24.png" alt="" id="iconcito">
+                        </button>
+            
+                        <button id="playPauseBtn">
+                            <img src="imgs/play_arrow_24dp_000000_FILL0_wght600_GRAD0_opsz24.png" alt="" id="iconcito1">
+                        </button>
+            
+                        
+                        <button id="nextBtn">
+                            <img src="imgs/fast_forward_24dp_000000_FILL0_wght600_GRAD0_opsz24.png" alt="" id="iconcito">
+                        </button>
+
+                        <button id="shuffleBtn">
+                        
+                            <img src="imgs/shuffle_24dp_000000_FILL0_wght400_GRAD200_opsz24.png" alt="" id="shuffleIcon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="ablmcase">
+                <img src="https://th.bing.com/th/id/OIP.IGPQ7fVMaRHeHnp2-o5wSwHaHa?rs=1&pid=ImgDetMain" alt="" id="album">
+                <div class="barsup">
+
+                    <img src="https://media4.giphy.com/media/UGrpkMXipFWQ06IHIM/giphy.gif" alt="" id="barsup">
+                </div>
+            </div>
+        </div>
+        <div class="myprfcard" id="cardrule">
+            <img src="https://alaqua.org/wp-content/uploads/ninja-forms/12/20230828_135532.png" alt="">
+            <img src="https://th.bing.com/th/id/R.9e68b8aa7d2d967f4a1a3cee71592cec?rik=tFtMzMi580oFIw&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_90018.png&ehk=qVecf9nTUP%2fWhQagNpKt0XKw0DeH2mEz7FxMLV8os%2bs%3d&risl=&pid=ImgRaw&r=0" alt="" id="editpfp" onclick="">
+            <div id="text">
+                <h1>Olá, dabicito :)</h1>
+                <p>Um prazer te ver de novo!</p>
+                <input type="button" value="Editar Perfil" id="editbttn">
+            </div>
+            <div class="infotable">
+                <table>
+                    <tr>
+                        <th>Top 3+</th>
+                        <th>Vezes Reproduzida</th>
+                        <th>Tempo:Duração</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Cha Cha</td>
+                        <td>187 <span id="smaller">em 3 meses...</span></td>
+                        <td>15h 24m e 35s</td>
+                    </tr>
+                    <tr>
+                        <td>RED EYES DRAGON CHAIN</td>
+                        <td>102 <span id="smaller">em 3 meses...</span></td>
+                        <td>3h 4m e 39s</td>
+                    </tr>
+                    <tr>
+                        <td>Guess</td>
+                        <td>89 <span id="smaller">em 3 meses...</span></td>
+                        <td>0h 57m e 55s</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+
+        
+        
+        <audio id="audioPlayer"></audio>
+    </footer>
+
+    <script src="mscfeature.js"></script>
+    <script src="loading.js"></script>
+</body>
+</html>

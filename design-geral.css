@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    font-family: 'Oswald';
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0vw 2vw rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.123);
+    z-index: 1000;
+    transition: all ease 0.5s;
+
+    & li {
+        display: inline;
+
+        & a {
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.753);
+            text-decoration: none;
+            font-size: 3vw;
+            padding-left: 4vw;
+            padding-right: 3vw;
+            
+        }
+    }
+}
+
+nav:hover {
+    background-color: #000000bd;
+    & a {
+        color: #f3f3f3;
+        font-weight: 600;
+        transition: all ease 1s;
+    }  
+    
+    /*
+
+    & a:hover {    /* mude as cores para cada site */ 
+    
+    /*
+        color: 0;
+        font-weight: 500;
+        text-shadow: 0;
+    } */
+}
+
+.main {
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+}
+
+#cardrule {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 15px;
+    margin: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: 0px 0px 40px rgba(36, 36, 36, 0.486);
+}
+
+::-webkit-scrollbar {
+    background-color: #00000011;
+    border-radius: 10vw;
+    width: 1vw;
+    margin-left: 0.2vw;
+    height: 0.7vw;
+    opacity: 100%;
+    z-index: 1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10vw;
+    background-color: #ffffff;
+    border: 0.15vw solid black;
+    width: 0.8vw;
+}
+
+#album {
+    width: 20vw;
+    height: 20vw;
+    margin-top: 1vw;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.767);
+    z-index: 1;
+    transition: all ease 0.5s;
+}
+
+/*
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    z-index: 9999;
+    transition: all ease 1s;
+    opacity: 0; 
+    overflow: hidden;
+    visibility: hidden; 
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.spinner {
+    border: 19vw solid #f3f3f3;
+    border-top: 19vw solid #000596;
+    border-radius: 50%;
+    width: 90vw;
+    height: 90vw;
+    transform: scale(9);
+    margin-left: -14.5vw;
+    margin-top: -5vw;
+    animation: spin 3.8s linear infinite;
+}
+
+/* mude as cores p cada site */
+
+/*
+
+@keyframes spin {
+    0% { transform: rotate(0deg); border-top: 19vw solid #fce700; box-shadow: 0 0 0vw #f8fc00;}
+    25% { transform: rotate(90deg); border-top: 19vw solid #ff7700; box-shadow: 0 0 0vw #fc9b00}
+    50% { transform: rotate(180deg); border-top: 19vw solid #fc0000;box-shadow: 0 0 0vw #fc0000}
+    75% { transform: rotate(270deg); border-top: 19vw solid #ff7700;box-shadow: 0 0 0vw #fc9b00}
+    100% { transform: rotate(360deg); border-top: 19vw solid #ffdd00;box-shadow: 0 0 0vw #fcf800}
+}
+
+.loader {
+    margin-top: -90vw;
+    margin-left: 36vw;
+    font-size: 5vw;
+    color: #333;
+    animation: runes 3.9s ease infinite;
+}
+
+@keyframes runes {
+    0% {
+        color: #e45f00;
+        text-shadow: 0.1vw 0 0.15vw rgb(246, 255, 0), -0.1vw 0 0.15vw rgb(255, 0, 0), 0 0 1vw white;
+        font-weight: 900;
+        letter-spacing: 0vw;
+    } 50% {
+        font-weight: 900;
+        letter-spacing: -0.2vw;
+        color: #131313;
+        text-shadow: 0 0 0;
+    } 100% {
+        color: #e45f00;
+        text-shadow: 0.1vw 0 0.15vw rgb(246, 255, 0), -0.1vw 0 0.15vw rgb(255, 0, 0), 0 0 1vw white;
+        font-weight: 900;
+        letter-spacing: 0vw;
+    }
+}
+
+.loading-screen.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+*/
